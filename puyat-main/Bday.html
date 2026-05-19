@@ -205,11 +205,17 @@
             z-index: 20;
             opacity: 0;
             transition: opacity 1.5s ease;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             width: 100%;
+            padding: 2rem 0;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #envelope-stage img {
+            max-width: 180px;
+            margin-top: 1.5rem;
+            border-radius: 10px;
         }
 
         #envelope-stage.visible { display: flex; opacity: 1; }
@@ -446,23 +452,26 @@
 
         /* Mobile Responsiveness */
         @media (max-width: 600px) {
-            .instructions h1 { font-size: 2rem; }
-            .instructions p { font-size: 1rem; }
-            .score-board { font-size: 1.2rem; }
-            .continue-btn { padding: 1rem 3rem; font-size: 1.5rem; }
+            .instructions h1 { font-size: 1.8rem; }
+            .instructions p { font-size: 0.95rem; }
+            .score-board { font-size: 1.1rem; }
+            .continue-btn { padding: 1rem 2.5rem; font-size: 1.4rem; }
             
-            .hiding-spot { font-size: 2.5rem; }
-            .hiding-spots-container { gap: 1rem; padding: 10px; }
+            .hiding-spot { font-size: 2.2rem; }
+            .hiding-spots-container { gap: 0.8rem; padding: 10px; }
 
-            .envelope { width: 250px; height: 160px; }
-            .flap { border-left-width: 125px; border-right-width: 125px; border-top-width: 90px; }
-            .pocket { border-left-width: 125px; border-right-width: 125px; border-bottom-width: 160px; }
-            .letter-preview { width: 220px; height: 140px; }
-            .seal { top: 60px; width: 35px; height: 35px; font-size: 1rem; }
+            .envelope { width: 210px; height: 140px; }
+            .flap { border-left-width: 105px; border-right-width: 105px; border-top-width: 75px; }
+            .pocket { border-left-width: 105px; border-right-width: 105px; border-bottom-width: 140px; }
+            .letter-preview { width: 180px; height: 120px; }
+            .seal { top: 50px; width: 32px; height: 32px; font-size: 0.9rem; }
             
-            .love-letter { padding: 1.5rem; line-height: 20px; width: 95%; }
-            .love-letter h2 { font-size: 1.8rem; margin-bottom: 1rem; }
-            .love-letter p { font-size: 1.1rem; margin-bottom: 1rem; }
+            .love-letter { padding: 1.2rem; line-height: 22px; width: 92%; }
+            .love-letter h2 { font-size: 1.6rem; margin-bottom: 0.8rem; }
+            .love-letter p { font-size: 1rem; margin-bottom: 0.8rem; }
+            .open-btn { font-size: 1.2rem; padding: 0.8rem 2rem; margin-top: 2rem; }
+            
+            #youtube-player { width: 280px; height: 157.5px; }
         }
 
     </style>
